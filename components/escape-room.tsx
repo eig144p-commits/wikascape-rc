@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import { DoorClosed, DoorOpen, KeyRound, Lightbulb, Lock, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -206,7 +206,7 @@ function splitPassword(password: string, pieces: number) {
   return Array.from({ length: pieces }, (_, index) => letters.slice(index * size, (index + 1) * size))
 }
 
-export function EscapeRoom({ slug }: { slug: string }) {
+export function EscapeRoom({ slug, notes }: { slug: string; notes?: ReactNode }) {
   const language = getLanguage(slug)!
   const { puzzles } = usePuzzles(slug)
   const [progress, setProgress] = useStoredState<Progress>(KEYS.progress(slug), EMPTY_PROGRESS)
@@ -236,6 +236,7 @@ export function EscapeRoom({ slug }: { slug: string }) {
 
   return (
     <section aria-labelledby="puzzles-title" className="flex flex-col justify-center gap-5">
+      {notes}
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 id="puzzles-title" className="font-heading text-2xl font-bold">
