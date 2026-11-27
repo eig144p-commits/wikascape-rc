@@ -235,7 +235,7 @@ export function EscapeRoom({ slug }: { slug: string }) {
   }
 
   return (
-    <section aria-labelledby="puzzles-title" className="flex flex-col gap-5">
+    <section aria-labelledby="puzzles-title" className="flex flex-col justify-center gap-5">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 id="puzzles-title" className="font-heading text-2xl font-bold">

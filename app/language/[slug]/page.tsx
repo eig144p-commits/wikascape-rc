@@ -68,6 +68,8 @@ export default async function LanguagePage({ params }: { params: Promise<{ slug:
             </dl>
           </section>
 
+          <RoomNotes slug={language.slug} />
+
           <section aria-labelledby="where-title" className="rounded-2xl border bg-card p-5">
             <h2 id="where-title" className="font-heading text-lg font-bold">
               {"Where it's spoken"}
@@ -80,8 +82,6 @@ export default async function LanguagePage({ params }: { params: Promise<{ slug:
               ))}
             </ul>
           </section>
-
-          <RoomNotes slug={language.slug} />
 
           <LessonHelp languageSlug={language.slug} />
         </aside>

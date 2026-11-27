@@ -16,7 +16,7 @@ export default function HomePage() {
 
       <section className="flex flex-col gap-6">
         <div>
-          <p className="text-sm font-bold uppercase tracking-wider text-primary">Mabuhay, estudyante!</p>
+          <p className="text-sm font-bold uppercase tracking-wider text-primary">Mabuhay, MAg-aaral!</p>
           <h1 className="mt-2 text-balance font-heading text-4xl font-extrabold leading-[1.02] tracking-tight md:text-5xl">
             Explore the many voices of the Philippines.
           </h1>

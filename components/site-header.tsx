@@ -42,7 +42,7 @@ export function SiteHeader() {
           <Link
             href="/magnets"
             aria-label={`My Ref Magnets: ${magnets.length} collected`}
-            className="ml-1 flex items-center gap-1.5 rounded-full bg-accent py-1 pl-1.5 pr-3 text-sm font-bold text-accent-foreground transition-colors hover:bg-accent/90"
+            className="ml-1 flex items-center gap-1.5 rounded-full border border-border bg-accent py-1 pl-1.5 pr-[49px] text-sm font-bold text-accent-foreground transition-colors hover:bg-accent/90"
           >
             <Image src="/images/ph-sun.png" alt="" width={24} height={24} className="size-6 object-contain" />
             {magnets.length}

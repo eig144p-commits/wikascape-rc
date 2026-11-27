@@ -8,7 +8,7 @@ export function RoomNotes({ slug }: { slug: string }) {
   if (notes.length === 0) return null
 
   return (
-    <section aria-labelledby="room-notes-title" className="rounded-2xl border bg-card p-5">
+    <section aria-labelledby="room-notes-title" className="rounded-2xl border bg-card p-5 pr-0">
       <h2 id="room-notes-title" className="font-heading text-lg font-bold">
         From your educators
       </h2>
