@@ -5,13 +5,14 @@ import { NOTE_KIND_LABELS, safeLink, useRoomNotes } from '@/lib/room-notes'
 
 export function RoomNotes({ slug }: { slug: string }) {
   const { notes } = useRoomNotes(slug)
-  if (notes.length === 0) return null
-
   return (
-    <section aria-labelledby="room-notes-title" className="rounded-2xl border bg-card p-5 pr-0">
+    <section aria-labelledby="room-notes-title" className="rounded-2xl border bg-card p-5">
       <h2 id="room-notes-title" className="font-heading text-lg font-bold">
         From your educators
       </h2>
+      {notes.length === 0 ? (
+        <p className="mt-3 text-sm text-muted-foreground">No lessons or notes have been added to this room yet.</p>
+      ) : (
       <ul className="mt-3 flex flex-col gap-4">
         {notes.map((note) => {
           const href = safeLink(note.link)
@@ -39,6 +40,7 @@ export function RoomNotes({ slug }: { slug: string }) {
           )
         })}
       </ul>
+      )}
     </section>
   )
 }
