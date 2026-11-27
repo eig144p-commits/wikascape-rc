@@ -103,6 +103,7 @@ export const LANGUAGES: Language[] = [
     speakers: 'About 9 million speakers',
     provinces: [
       'Iloilo',
+      'Aklan',
       'Capiz',
       'Guimaras',
       'Negros Occidental',
@@ -135,6 +136,8 @@ export const LANGUAGES: Language[] = [
       'Ilocos Sur',
       'La Union',
       'Abra',
+      'Apayao',
+      'Batanes',
       'Cagayan',
       'Isabela',
       'Quirino',

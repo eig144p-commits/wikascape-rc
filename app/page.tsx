@@ -22,7 +22,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
             Hover over the map to discover which language is spoken in each province. Pick a
-            region, solve its puzzles, and find the secret way out to earn a Ref magnet.
+            region, learn about the language, solve its puzzles, and find the secret way out to earn a Ref magnet.
           </p>
         </div>
 

@@ -25,7 +25,7 @@ export function SiteHeader() {
           <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-sm text-primary-foreground">
             W
           </span>
-          <span className="hidden sm:inline">Wika Escape</span>
+          <span className="hidden sm:inline">Wika Scape</span>
         </Link>
         <nav aria-label="Main" className="flex items-center gap-1 sm:gap-2">
           {NAV.filter((item) => !item.educatorOnly || isEducator).map(({ href, label, icon: Icon }) => (
